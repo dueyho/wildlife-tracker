@@ -9,7 +9,7 @@ class SightingsController < ApplicationController
     @sighting = Sighting.new(:date => params[:date],
                              :time => params[:time],
                              :location => params[:location],
-                             :specie_id => params[:specie_id])
+                             :specie_id => params[:species_id])
 
     if @sighting.save
       render('sightings/success.html.erb')

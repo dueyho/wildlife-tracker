@@ -9,7 +9,7 @@
   </ul>
 <% end %>
 
-<form action="/species/<%= @sighting.specie_id %>/sightings" method="post">
+<form action="/species/<%= @sighting.specie.id %>/sightings" method="post">
   <label for="sighting_date">Date</label>
   <input id="sighting_date" name="date" type="date" value="<%= @sighting.date %>">
    <label for="sighting_time">Time</label>
